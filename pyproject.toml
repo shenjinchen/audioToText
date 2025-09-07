@@ -1,0 +1,23 @@
+[project]
+name = "com-jinchen-voice-to-text"
+version = "0.1.0"
+description = "This is a simple project, mainly aimed at converting real-time English audio into text.Currently, it is only supported for use on Mac."
+authors = [
+    {name = "ShenJinchen",email = "863346443@qq.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sounddevice (>=0.5.2,<0.6.0)",
+    "faster-whisper (>=1.2.0,<2.0.0)",
+    "huggingface-hub (>=0.34.4,<0.35.0)",
+    "numpy (<2)"
+]
+
+[tool.poetry]
+packages = [{include = "com"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
